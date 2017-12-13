@@ -25,11 +25,14 @@ public class DetailCelebrityFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view =  inflater.inflate(R.layout.fragment_detail_celebrity, container, false);
+        View view =  inflater.inflate(R.layout.detail_celebrity_list_item, container, false);
+
+        //updateCelebrityView();
         tvCelebrityId = view.findViewById(R.id.tvCelebrityId);
         tvCelebrityName = view.findViewById(R.id.tvCelebrityName);
         tvCelebrityAge = view.findViewById(R.id.tvCelebrityAge);
         tvCelebrityGender = view.findViewById(R.id.tvCelebrityGender);
+        //updateCelebrityView();
 
         return view;
     }
